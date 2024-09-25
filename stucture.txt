@@ -1,0 +1,74 @@
+ecommerce-platform/
+├── backend/                      # Backend (API, Database)
+│   ├── controllers/              # Business logic for handling routes
+│   │   ├── authController.js      # User authentication logic
+│   │   ├── productController.js   # CRUD for products
+│   │   └── orderController.js     # Order management logic
+│   ├── models/                   # MongoDB models
+│   │   ├── productModel.js       # Product schema
+│   │   ├── orderModel.js         # Order schema
+│   │   └── userModel.js          # User schema
+│   ├── routes/                   # API routes
+│   │   ├── authRoutes.js         # Authentication routes
+│   │   ├── productRoutes.js      # Product-related routes
+│   │   └── orderRoutes.js        # Order-related routes
+│   ├── middlewares/              # Middleware functions
+│   │   ├── authMiddleware.js      # JWT authentication
+│   │   └── errorMiddleware.js     # Error handling
+│   ├── services/                 # Business logic services
+│   │   ├── paymentService.js      # Razorpay integration
+│   │   └── emailService.js        # Email notifications
+│   ├── utils/                    # Utility functions
+│   │   ├── validation.js          # Data validation
+│   │   └── logger.js              # Logger utility
+│   ├── config/                   # Configuration files
+│   │   ├── db.js                 # Database connection setup
+│   │   └── env.js                # Environment variable setup
+│   ├── database/                 # Database migrations and seeders
+│   ├── payload-cms/              # Payload CMS setup
+│   │   ├── collections/           # Collection definitions for Payload
+│   │   └── config.js             # Payload CMS configuration
+│   └── server.js                 # Main Express server setup
+├── frontend/                     # Frontend (Storefront)
+│   ├── components/               # Reusable UI components
+│   │   ├── Header.js             # Navigation bar
+│   │   ├── ProductCard.js        # Product card component
+│   │   ├── CartDropdown.js       # Cart dropdown component
+│   │   └── Footer.js             # Footer component
+│   ├── pages/                    # Pages (Next.js routing)
+│   │   ├── index.js              # Home page
+│   │   ├── product/[id].js       # Product detail page
+│   │   ├── cart.js               # Cart page
+│   │   ├── checkout.js           # Checkout page
+│   │   ├── login.js              # Login page
+│   │   ├── register.js           # Registration page
+│   │   └── admin/                # Admin-related pages
+│   │       ├── dashboard.js      # Admin dashboard
+│   │       ├── products.js       # Manage products
+│   │       └── orders.js         # Manage orders
+│   ├── styles/                   # Global styles
+│   │   ├── globals.css           # Global CSS styles
+│   │   └── tailwind.css          # Tailwind CSS setup
+│   ├── hooks/                    # Custom React hooks
+│   │   ├── useCart.js            # Cart management hook
+│   │   └── useAuth.js            # Authentication hook
+│   ├── context/                  # Context API setup
+│   │   ├── CartContext.js        # Cart context
+│   │   └── AuthContext.js        # Auth context
+│   ├── api/                      # API interaction functions
+│   │   ├── productApi.js         # Product API calls
+│   │   ├── orderApi.js           # Order API calls
+│   │   └── authApi.js            # Authentication API calls
+│   ├── animations/               # CSS animations (if any)
+│   ├── utils/                    # Helper functions
+│   │   ├── formatPrice.js        # Price formatting function
+│   │   └── fetchWrapper.js       # Fetch wrapper for API calls
+│   ├── public/                   # Public assets (images, fonts, etc.)
+│   └── next.config.js            # Next.js configuration
+├── tests/                        # Unit and integration tests
+│   ├── frontend/                 # Frontend tests
+│   └── backend/                  # Backend tests
+├── .env                          # Environment variables
+├── package.json                  # Project metadata and dependencies
+├── tailwind.config.js            # Tailwind CSS configuration
+└── postcss.config.js             # PostCSS configuration for Tailwind CSS
